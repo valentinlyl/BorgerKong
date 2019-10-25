@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        tools:context=".FoodDetail">
+
+        <TextView
+            android:id="@+id/detailName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/colorBlack"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/detailPhoto"
+            android:layout_width="176dp"
+            android:layout_height="133dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/detailName" />
+
+        <TextView
+            android:id="@+id/detailPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="92dp"
+            android:layout_marginRight="92dp"
+            android:textSize="24sp"
+            android:textColor="@color/colorBlack"
+            android:textStyle="normal"
+            android:fontFamily="sans-serif-medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/detailDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="16dp"
+            android:textSize="18sp"
+            android:textColor="@color/colorBlack"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/detailPhoto" />
+
+        <Button
+            android:id="@+id/detailMinus"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="56dp"
+            android:layout_marginLeft="56dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/minus"
+            app:layout_constraintBottom_toTopOf="@+id/detailSubmit"
+            app:layout_constraintStart_toEndOf="@+id/detailPhoto" />
+
+        <Button
+            android:id="@+id/detailAdd"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginRight="28dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/add"
+            app:layout_constraintBottom_toTopOf="@+id/detailSubmit"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/detailSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="148dp"
+            android:text="@string/addOrderBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.903"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/detailQTY"
+            android:textSize="24sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:textColor="@color/colorBlack"
+            app:layout_constraintBottom_toTopOf="@+id/detailSubmit"
+            app:layout_constraintEnd_toStartOf="@+id/detailAdd"
+            app:layout_constraintStart_toEndOf="@+id/detailMinus" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

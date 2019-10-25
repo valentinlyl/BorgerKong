@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Borger Kong</string>
+    <string name="menuTitle">Borger Kong Menu</string>
+    <string name="viewOrderBtn">View Order</string>
+    <string name="sendOrderBtn">Send Order</string>
+    <string name="minus">-</string>
+    <string name="add">+</string>
+    <string name="addOrderBtn">Add to Order</string>
+    <string name="orderTitle">My Order</string>
+</resources>
